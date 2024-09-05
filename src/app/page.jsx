@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Weather from "@/app/context/weather";
 
 export default function Home() {
-  const { setLocation, data, location, getResponse, ownData, getResponseOwn } =
+  const { setLocation, data, location, getResponse, getResponseOwn } =
     useContext(Weather);
   function handleClick(e) {
     if (!location || location.trim().length < 4) {
@@ -15,7 +15,7 @@ export default function Home() {
     getResponse();
   }
 
-  function handleOwnClick(e) {
+  function handleOwnClick() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         let lat = position.coords.latitude;
