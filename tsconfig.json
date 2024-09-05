@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/context/weather.js", "src/app/page.jsx", "src/app/weather/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/context/weather.js", "src/app/page.jsx", "src/app/weather/page.jsx", "src/app/component/theme.jsx", "src/app/layout.jsx"],
   "exclude": ["node_modules"]
 }
