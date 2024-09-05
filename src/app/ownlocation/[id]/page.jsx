@@ -6,7 +6,7 @@ import { WiHumidity } from "react-icons/wi";
 import { WiDayCloudyGusts } from "react-icons/wi";
 import { useContext } from "react";
 import Weather from "../../context/weather";
-export default function page() {
+export default function Page() {
   const { ownData} = useContext(Weather);
   if(!ownData || !ownData.weather || !ownData.main){
     return (
