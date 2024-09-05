@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Weather from "@/app/context/weather";
 
 export default function Home() {
-  const { setLocation, data, location, getResponse, getResponseOwn } =
+const { setLocation, data, location, getResponse, getResponseOwn } =
     useContext(Weather);
   function handleClick(e) {
     if (!location || location.trim().length < 4) {
@@ -20,7 +20,6 @@ export default function Home() {
       (position) => {
         let lat = position.coords.latitude;
         let long = position.coords.longitude;
-        console.log(`Latitude: ${lat}, Longitude: ${long}`);
         getResponseOwn(lat, long);
       }
     );

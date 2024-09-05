@@ -7,7 +7,6 @@ export const WeatherProvider = (props) => {
   const [ownData, setOwnData] = useState([]);
   const [location, setLocation] = useState();
   const getResponseOwn=async(lat,lon)=>{
-    if(lat && lon){
       try {
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=315090f0d8f4009ff04aeb0d8cac3619`);
         if (!res.ok) {
@@ -19,7 +18,6 @@ export const WeatherProvider = (props) => {
       catch (error) { 
         console.log(error);
       }
-    }
   };
   const getResponse = async () => {
     try {
