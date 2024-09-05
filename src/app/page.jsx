@@ -22,12 +22,6 @@ export default function Home() {
         let long = position.coords.longitude;
         console.log(`Latitude: ${lat}, Longitude: ${long}`);
         getResponseOwn(lat, long);
-        if(!ownData.name){
-          e.preventDefault();
-        }
-      },
-      (error) => {
-        alert("Allow your location to use this feature");
       }
     );
   }
