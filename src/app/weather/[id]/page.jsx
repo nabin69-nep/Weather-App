@@ -23,10 +23,10 @@ export default function Page() {
     );
 
   }
-  {
+  
    useEffect(()=>{
     setLocation("")
-   },[]) 
+   },[setLocation]) 
       return (
       <div className="flex  justify-center items-center  h-[96vh]">
           <div className=" flex flex-col justify-center md:w-1/2 w-screen items-center dark:text-black text-white bg-black dark:bg-green-100 p-10 rounded gap-3">
@@ -71,4 +71,3 @@ export default function Page() {
         </div> 
       )
       }
-}
