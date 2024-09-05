@@ -1,5 +1,5 @@
 "use client";
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext } from "react";
 
 const Weather = createContext(null);
 export const WeatherProvider = (props) => {

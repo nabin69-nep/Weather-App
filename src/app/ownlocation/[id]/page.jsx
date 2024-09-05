@@ -1,5 +1,5 @@
 "use client";
-import React,{useEffect} from "react";
+import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
 import { WiHumidity } from "react-icons/wi";
